@@ -9,7 +9,7 @@
 
 // aggiungere qui le intestazioni da precompilare
 #include "framework.h"
-#include "MinHook.h"
+#include <MinHook.h>
 #include <stdio.h>
 #include <windows.h>
 #include "reg_types.h"
