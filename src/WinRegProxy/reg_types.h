@@ -1,6 +1,8 @@
 #pragma once
 // Tipi delle funzioni Reg* e puntatori "Real_*" (i trampolini creati da MinHook).
-// Va incluso da UN SOLO .cpp (reg_hooks.cpp): i Real_* sono static.
+// I Real_* sono dichiarati EXTERN qui e DEFINITI in reg_hooks.cpp: il file e'
+// quindi includibile liberamente da chi deve chiamare gli originali (reg_hooks.cpp,
+// REG_adapter.cpp, ...).
 
 #include "pch.h"
 
@@ -102,7 +104,7 @@ typedef LSTATUS(WINAPI* RegConnectRegistryW_t)(LPCWSTR, HKEY, PHKEY);
 typedef LSTATUS(WINAPI* RegDisconnectRegistry_t)(HKEY);
 
 // ================================================================ Real_* (trampolini)
-#define DECL_REAL(NAME) static NAME##_t Real_##NAME = nullptr
+#define DECL_REAL(NAME) extern NAME##_t Real_##NAME
 
 DECL_REAL(RegOpenKeyExA);     DECL_REAL(RegOpenKeyExW);
 DECL_REAL(RegOpenKeyA);       DECL_REAL(RegOpenKeyW);

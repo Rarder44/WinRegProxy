@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="WinRegProxy/WinRegProxy.vcxproj" Id="7b06f91e-a2f4-4439-ad3a-7d895ad43071" />
-</Solution>

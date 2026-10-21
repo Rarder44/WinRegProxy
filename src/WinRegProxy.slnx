@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="WinRegProxy/WinRegProxy.vcxproj" Id="7b06f91e-a2f4-4439-ad3a-7d895ad43071" />
+  <Project Path="..\Test\Test.vcxproj" Id="4d1a8c3e-9f2b-4e6a-b8d7-2c5e9a1f0b34" />
+  <Project Path="..\Test\UnitTest\UnitTest.vcxproj" Id="85358c14-cfbc-4647-a563-a607c5f4a73a" />
+  <Project Path="..\Test\VirtTest\VirtTest.vcxproj" Id="b3f7a9d2-4c8e-4b6f-9a1d-2e5c8f0a7b31" />
+</Solution>
